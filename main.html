@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>APT 고도화</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-phone.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <link rel="short icon" href="./images/ic-favicon.png" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top hidden-phone">
+            <div class="wrap">
+                <div class="search">search</div>
+                <div class="topmenu">
+                    <a href="#none">로그인</a>
+                    <a href="#none">회원가입</a>
+                    <a href="#none">contact us</a>
+                    <a href="#none">내부망 접속</a>
+                </div>
+            </div>
+            <!--//wrap-->
+        </div>
+        <!--//header-top-->
+        <div class="header-bottom hidden-phone">
+            <nav>
+                <h1><img src="./images/h1-logo.png" alt="사이버안보연구회" /></h1>
+                <!--
+                <ul class="mainmenu">
+                    <li>연구회 소개
+                            <ul class="submenu">
+                                <li><a href="#none">인사말</a></li>
+                                <li><a href="#none">조직도</a></li>
+                                <li><a href="#none">임원 소개</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">공지사항</a></li>
+                            </ul>
+                    </li>
+                    <li>사이버 안보 동향
+                            <ul class="submenu">
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국내외 보안 동향</a></li>
+                                <li><a href="#none">국내외 보안 동향</a></li>
+                                <li><a href="#none">국내외 보안 동향</a></li>
+                                <li><a href="#none">국내외 보안 동향</a></li>
+                            </ul>
+                    </li>
+                    <li>연구활동
+                            <ul class="submenu">
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                                <li><a href="#none">국방 사이버 전략 연구실</a></li>
+                            </ul>
+                    </li>
+                    <li>회원 공간
+                            <ul class="submenu">
+                                <li><a href="#none">회원 게시판</a></li>
+                                <li><a href="#none">회원 기고</a></li>
+                                <li><a href="#none">회원 자료실</a></li>
+                                <li><a href="#none">회원 찾기</a></li>
+                                <li><a href="#none">주요 행사 일정</a></li>
+                            </ul>
+                    </li>               
+                </ul>-->
+                <div class="sec-center"> 	
+                  <!--  <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>-->
+                    <ul class="dropdown-ul">
+                        <li class="dropdown">연구회 소개</li>
+                        <div class="section-dropdown"> 
+                            <a href="#">인사말</a>
+                            <a href="#">조직도</a>
+                            <a href="#">임원 소개</a>
+                            <a href="#none">찾아오시는 길</a>
+                            <a href="#none">공지사항</a>
+                        </div>
+                    </ul>
+                    <ul class="dropdown-ul">
+                        <li class="dropdown">사이버 안보 동향</li>
+                        <div class="section-dropdown"> 
+                            <a href="#none">국방 사이버 전략 연구실</a>
+                            <a href="#none">국내외 보안 동향</a>
+                            <a href="#none">국내외 보안 동향</a>
+                            <a href="#none">국내외 보안 동향</a>
+                            <a href="#none">국내외 보안 동향</a>
+                        </div>
+                    </ul>
+                    <ul class="dropdown-ul">
+                        <li class="dropdown">연구 활동</li>
+                        <div class="section-dropdown"> 
+                            <a href="#">인사말</a>
+                            <a href="#">조직도</a>
+                            <a href="#">임원 소개</a>
+                            <a href="#none">찾아오시는 길</a>
+                            <a href="#none">공지사항</a>
+                        </div>
+                    </ul>
+                    <ul class="dropdown-ul">
+                        <li class="dropdown">회원 공간</li>
+                        <div class="section-dropdown"> 
+                            <a href="#">인사말</a>
+                            <a href="#">조직도</a>
+                            <a href="#">임원 소개</a>
+                            <a href="#none">찾아오시는 길</a>
+                            <a href="#none">공지사항</a>
+                        </div>
+                    </ul>
+                </div>
+                
+            </nav>
+            <!--//wrap-->
+        </div>
+        <!--//header-bottom-->
+        <div class="side-menu hidden-pc">
+            <div class="menu" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <h1><img src="./images/h1-logo.png" alt="사이버안보연구회" /></h1>
+              <div id="mySidenav" class="sidenav hidden-pc">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+              }
+
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+             }
+              </script>
+
+        </div>
+    </header> <!-- //header -->
+
+
+<!-- Swiper -->
+<div class="main-visual">
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider">
+                <div class="title">
+                    <div class="wrap">
+                        <h2>111[보안뉴스 / 2.14.] 타이포스쿼팅 통해 코드 리포지터리 노린 공급망 공격 발견돼</h2>
+                        <div class="decription">유명 패키지인 Abquery와 비슷한 이름의 악성 패키지, PyPI와 NPM에 등장 요약 : 보안 외신 핵리드에 의하면
+                            파이선 생태계에서 가장
+                            널리
+                            사용되는 코드 리포지터리인 PyPI와 노드(Node.js) 생태계의 대표 리포지터리 NPM에서 새로운 악성 패키지가 발견됐다고 한다. 이 악성 패키지의 이름
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/img-cyber-01.png" alt="" />
+            </div>
+            <div class="swiper-slide slider">
+                <div class="title">
+                    <div class="wrap">
+                        <h2>222[보안뉴스 / 2.14.] 타이포스쿼팅 통해 코드 리포지터리 노린 공급망 공격 발견돼</h2>
+                        <div class="decription">유명 패키지인 Abquery와 비슷한 이름의 악성 패키지, PyPI와 NPM에 등장 요약 : 보안 외신 핵리드에 의하면
+                            파이선 생태계에서 가장
+                            널리
+                            사용되는 코드 리포지터리인 PyPI와 노드(Node.js) 생태계의 대표 리포지터리 NPM에서 새로운 악성 패키지가 발견됐다고 한다. 이 악성 패키지의 이름
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/img-cyber-02.png" alt="" />
+            </div>
+            <div class="swiper-slide slider">
+                <div class="title">
+                    <div class="wrap">
+                        <h2>222[보안뉴스 / 2.14.] 타이포스쿼팅 통해 코드 리포지터리 노린 공급망 공격 발견돼</h2>
+                        <div class="decription">유명 패키지인 Abquery와 비슷한 이름의 악성 패키지, PyPI와 NPM에 등장 요약 : 보안 외신 핵리드에 의하면
+                            파이선 생태계에서 가장
+                            널리
+                            사용되는 코드 리포지터리인 PyPI와 노드(Node.js) 생태계의 대표 리포지터리 NPM에서 새로운 악성 패키지가 발견됐다고 한다. 이 악성 패키지의 이름
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/img-cyber-03.png" alt="" />
+            </div>
+            <div class="swiper-slide slider">
+                <div class="title">
+                    <div class="wrap">
+                        <h2>222[보안뉴스 / 2.14.] 타이포스쿼팅 통해 코드 리포지터리 노린 공급망 공격 발견돼</h2>
+                        <div class="decription">유명 패키지인 Abquery와 비슷한 이름의 악성 패키지, PyPI와 NPM에 등장 요약 : 보안 외신 핵리드에 의하면
+                            파이선 생태계에서 가장
+                            널리
+                            사용되는 코드 리포지터리인 PyPI와 노드(Node.js) 생태계의 대표 리포지터리 NPM에서 새로운 악성 패키지가 발견됐다고 한다. 이 악성 패키지의 이름
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/img-cyber-04.png" alt="" />
+            </div>
+            <div class="swiper-slide slider">
+                <div class="title">
+                    <div class="wrap">
+                        <h2>222[보안뉴스 / 2.14.] 타이포스쿼팅 통해 코드 리포지터리 노린 공급망 공격 발견돼</h2>
+                        <div class="decription">유명 패키지인 Abquery와 비슷한 이름의 악성 패키지, PyPI와 NPM에 등장 요약 : 보안 외신 핵리드에 의하면
+                            파이선 생태계에서 가장
+                            널리
+                            사용되는 코드 리포지터리인 PyPI와 노드(Node.js) 생태계의 대표 리포지터리 NPM에서 새로운 악성 패키지가 발견됐다고 한다. 이 악성 패키지의 이름
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/img-cyber-05.png" alt="" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</div>
+<!--//main-visual-->
+
+    <main>
+        <section class="notice-container">
+            <div class="wrap">
+                <div class="lab-cont">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openLab(event, 'lab01')" id="defaultOpen">국방 사이버 전략 연구실</button>
+                        <button class="tablinks" onclick="openLab(event, 'lab02')">디지털 증거 수사 연구실</button>
+                        <button class="tablinks" onclick="openLab(event, 'lab03')">사이버 침해 대응 연구실</button>
+                        <button class="tablinks" onclick="openLab(event, 'lab04')">사이버 공격 기술 연구실</button>
+                        <button class="tablinks" onclick="openLab(event, 'lab05')">사이버 법률 정책 연구실</button>
+                        <button class="tablinks" onclick="openLab(event, 'lab06')">제로 데이 취약점 연구실</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="lab01" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                    <div id="lab02" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                    <div id="lab03" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                    <div id="lab04" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                    <div id="lab05" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                    <div id="lab06" class="tabcontent">
+                        <ul>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                            <li><a href="#non">中 해킹그룹의 글로벌 사이버 공격에 대한 대</a> <span>2023.02.13</span></span></li>
+                        </ul>
+                    </div>
+                <script>
+                    function openLab(evt, labName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(labName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                </script>
+                </div>
+                <!--//lab-cont-->
+
+                <div class="notice-cont">
+                    <div class="tab">
+                        <button class="tablinks1" onclick="openNotice(event, 'notice01')"
+                            id="defaultOpenNotice">공지사항</button>
+                        <button class="tablinks1" onclick="openNotice(event, 'notice02')">정기/수시 간행물</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="notice01" class="tabcontent1">
+                        <table>
+                            <colgroup>
+                                <col width="70%" />
+                                <col width="20%" />
+                            </colgroup>
+                            <tr>
+                                <td class="title"><a href="#non">
+                                    2022년 하반기 사이버 안보 연구회 회원 기술가나다</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">사이버 안보 연구회 하계 세미나 일정 안내</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="notice02" class="tabcontent1">
+                        <table>
+                            <colgroup>
+                                <col width="70%" />
+                                <col width="20%" />
+                            </colgroup>
+                            <tr>
+                                <td class="title"><a href="#non">[자체/공개] 러시아-우크라이나 전쟁 간 사이버 작전 목록
+                                </a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#non">연구실 내용입니다.</a></td>
+                                <td class="date">22-03-20</td>
+                            </tr>
+                        </table>
+                    </div>
+                <script>
+                    function openNotice(evt, cityName1) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent1");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks1");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName1).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpenNotice").click();
+                </script>
+                </div>
+                <!--//notice-cont-->
+
+                    <div class="banner-cont swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slider">
+                                <img src="./images/img-notice-01.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide fade">
+                                <img src="./images/img-notice-02.jpg" alt="" />
+                            </div>
+                             <div class="swiper-slide fade">
+                                <img src="./images/img-notice-03.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+            
+                     <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".banner-cont", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        });
+                    </script>
+                    
+                </div>
+                <!--//banner-cont-->
+            </div>
+            <!--//wrap-->
+
+        </section>
+        <section class="schedule-container">
+            <div class="wrap">
+                <h3>주요 행사 일정</h3>
+                <!-- Swiper -->
+                <div class="swiper schedule-cont">
+                    <div class="swiper-wrapper">
+                        <div class="cont swiper-slide">
+                            <a href="#none">
+                                <div class="img">
+                                    <img src="./images/img-schedule-01.jpeg" alt="" />
+                                </div>
+                                <div class="tit">
+                                    <b>제 11회 전자정부 정보보호 솔루션 페어</b>
+                                    <span>3월 29일 - 3월 31일</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont swiper-slide">
+                            <a href="#none">
+                                <div class="img">
+                                    <img src="./images/img-schedule-01.jpeg" alt="" />
+                                </div>
+                                <div class="tit">
+                                    <b>제 11회 전자정부 정보보호 솔루션 페어</b>
+                                    <span>3월 29일 - 3월 31일</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont swiper-slide">
+                            <a href="#none">
+                                <div class="img">
+                                    <img src="./images/img-schedule-01.jpeg" alt="" />
+                                </div>
+                                <div class="tit">
+                                    <b>제 11회 전자정부 정보보호 솔루션 페어</b>
+                                    <span>3월 29일 - 3월 31일</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont swiper-slide">
+                            <a href="#none">
+                                <div class="img">
+                                    <img src="./images/img-schedule-01.jpg" alt="" />
+                                </div>
+                                <div class="tit">
+                                    <b>제 11회 전자정부 정보보호 솔루션 페어</b>
+                                    <span>3월 29일 - 3월 31일</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="cont swiper-slide">
+                            <a href="#none">
+                                <div class="img">
+                                    <img src="./images/img-schedule-01.jpg" alt="" />
+                                </div>
+                                <div class="tit">
+                                    <b>제 11회 전자정부 정보보호 솔루션 페어</b>
+                                    <span>3월 29일 - 3월 31일</span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".schedule-cont", {
+                      slidesPerView: 3,
+                      spaceBetween: 10,
+                      loop: true,
+                      freeMode: true,
+                      pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                      },
+                      navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                     },
+                    });
+                </script>
+            </div>
+
+        </section>
+        
+        <section class="cyber-container">
+            <div class="wrap">
+                <h3>국가 사이버 위협 현황</h3>
+                <div class="cyber-cont">
+                    <ul>
+                        <li>
+                            <b data-rate="127">127</b>
+                            <span>랜섬웨어 신고건수</span>
+                        </li>
+                        <li>
+                            <b data-rate="764">764</b>
+                            <span>홈페이지 변조 공격 건수</span>
+                        </li>
+                        <li>
+                            <b data-rate="127">127</b>
+                            <span>침해사고 신고 접수 건수</span>
+                        </li>
+                        <li>
+                            <b data-rate="1024">1024</b>
+                            <span>랜섬웨어 신고건수</span>
+                        </li>
+                        <li>
+                            <b data-rate="99999">99999</b>
+                            <span>이번 달 신규 취약점 개수</span>
+                        </li>
+                        <li>
+                            <p>주의</p>
+                            <span>국가 사이버 위협 단계</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gif-cont">
+                    <img src="./images/bg-gif.gif" alt=""/>
+                </div>
+                <section class="news-wrap">
+                    <div class="news-wrap-inner ellipsis">
+                       <div class="news-scroll">
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0)">2월 23: 인도 보건부, 코로나 환자 데이터 유출에 대한 논평을 거부해 //</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">2월 24: 가짜 ChatGPT 앱으로 Windows, Android 멀웨어 확산돼
+                            </a>
+                          </li>
+                        </ul>  
+                       </div>   
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- //Tap & Event -->
+
+    <!-- footer -->
+
+  <footer class="footer">
+  	 <div class="wrap">
+           <div class="row">
+            <div class="footer-col foot-logo">
+                <div class="logo-cont">
+                    <img src="./images/footer-logo.png" alt="사이버안보연구회"/>
+                </div>
+            </div>
+  	 		<div class="footer-col">
+  	 			<h4>연구회 소개</h4>
+  	 			<ul>
+  	 				<li><a href="#">인사말</a></li>
+  	 				<li><a href="#">조직도</a></li>
+  	 				<li><a href="#">임원 소개</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>사이버 안보 동향</h4>
+  	 			<ul>
+  	 				<li><a href="#">국내외 보안 동향</a></li>
+  	 				<li><a href="#">해외 보안 이슈</a></li>
+  	 				<li><a href="#">간행물</a></li>
+  	 				<li><a href="#">전문가 칼럼</a></li>
+  	 				<li><a href="#">주요 기관 카드뉴스</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>연구 활동</h4>
+  	 			<ul>
+  	 				<li><a href="#">국방 사이버 전략 연구실</a></li>
+  	 				<li><a href="#">디지털 증거 수사 연구실</a></li>
+  	 				<li><a href="#">사이버 침해 대응 연구실</a></li>
+  	 				<li><a href="#">사이버 공격 기술 연구실</a></li>
+  	 				<li><a href="#">사이버 법률 정책 연구실</a></li>
+  	 				<li><a href="#">제로데이 취약점 연구실</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>회원 공간</h4>
+  	 			<ul>
+                    <li><a href="#">회원 게시판</a></li>
+                    <li><a href="#">회원 기고</a></li>
+                    <li><a href="#">회원 자료실</a></li>
+                    <li><a href="#">회원 찾기</a></li>
+                    <li><a href="#">주요 행사 일정</a></li>
+                </ul>
+  	 		</div>
+  	 	</div>
+        <div class="bottom-menu">
+            <ul>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">내부망 접속</a></li>
+            </ul>
+        </div> <!--//bottom-menu-->
+        <address>
+            <span>(04383) 서울특별시 용산구 이태원로 29 전쟁기념관 3층 315호 ( E-MAIL : admin@cybersecurity.re.kr )</span>
+            <span>Copyright (c) 2021 사이버안보연구회 All Rights Reserved.</span>
+        </address>
+  	 </div>
+  </footer>
+    <!-- // footer -->
+</body>
+
+</html>
